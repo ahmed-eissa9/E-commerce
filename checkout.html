@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> checkout </title>
+    <!-- file css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="top-nav continer">
+            <a href="index.html" class="logo"> <img src="img/logo-black.png" alt="" loading="lazy"> </a>
+
+            <form class="search">
+                <input type="search" placeholder="search for products">
+                <button type="submit"> search </button>
+            </form>
+
+            <div class="card-header">
+                <div class="icon-card"  onclick="openCart()";>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count-item" > 0 </span>
+                </div>   
+                <div class="total-price">
+                    <p> my cart: </p>
+                    <span class="price-cart"> $0 </span>
+                </div>   
+            </div>
+        </div>
+
+        <nav>
+            <div class="links continer">
+
+                <i onclick="openMenu()" class="fa-solid fa-bars btn_open_menu"></i>
+                
+                <ul id="menu">
+                    <span onclick="closeMenu()"class="bg_overlay"></span>
+                    <i onclick="closeMenu()" class="fa-solid fa-circle-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-black.png" alt="" loading="lazy">
+                    
+                    <li> <a href="index.html"> home </a> </li>
+                    <li> <a href="all_products.html"> all products </a> </li>
+                    <li> <a href="#"> about us </a> </li>
+                    <li> <a href="#"> content </a> </li>
+                </ul>
+                
+                <div class="login-signup">
+                    <a href="login.html"> login <i class="fa-solid fa-right-to-bracket"></i> </a>
+                    <a href="sign up.html"> sign up <i class="fa-solid fa-user-plus"></i> </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="cart">
+        <div class="top-cart">
+            <h3> my cart <span class="count_item_cart"> (0Item in cart) </span> </h3>
+            <span class="close-cart" onclick="closeCart()";> <i class="fa-regular fa-circle-xmark"></i> </span>
+        </div>
+
+        <div class="item-in-cart">
+        </div>
+
+        <div class="bottom-cart">
+            <div class="total">
+                <p> cart suptotal </p>
+                <p class="price-cart-total"> $0 </p>
+            </div>
+
+            <div class="buttom-cart">
+                <a href="#" class="btn-cart"> proceed to checkout </a>
+                <button  onclick="closeCart()"; class="btn-cart trans-bg"> shop more </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="checkout">
+        <div class="continer">
+            <div class="form_address">
+                <div class="address">
+                    <h2> Delivery address </h2>
+                    <form>
+                        <label> Email </label>
+                        <input type="email" placeholder="Enter Your Email" required>
+                        
+                        <label> Name </label>
+                        <input type="text" placeholder="Enter Your Name" required>
+                        
+                        <label> Address </label>
+                        <input type="text" placeholder="Enter Your address" required>
+                        
+                        <label> Phone </label>
+                        <input type="number" placeholder="Enter Your phone" required>
+                    </form>
+                </div>
+                    
+                <div class="coupon_code">
+                    <h2> Coupon Code </h2>
+
+                    <form>
+                        <label> Coupon code </label>
+                        <input type="text" placeholder="Enter Your coupon code">
+                    </form>
+                </div>
+            </div>
+
+            <div class="order_summaray">
+                <h2> Order Summary </h2>
+                
+                <div class="item_order">
+                    <div class="order_item">   
+                            <img src="img/product/product-1.jpg" alt="">
+                            
+                            <div class="content">
+                                <h4> original mobile android duai sim samrt phone G3</h4>
+                                <p> price : $185 </p>
+                            </div>
+                    </div>
+                    
+                    <div class="order_item">
+                        <img src="img/product/product3.jpg" alt="">
+
+                        <div class="content">
+                            <h4> original mobile android duai sim samrt phone G3</h4>
+                            <p> price : $185 </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="total">
+                    <h5> total :</h5>
+                    <h6 class="price_order"> $325.00</h6>
+                </div> 
+
+                <div class="btn_order ">
+                    <button> place order </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scroll" >
+        <div class="continer">
+            <p class="to_top"> BACK TO UP </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="continer">
+            <div class="row">
+                <div class="col">
+                    <img src="img/logo-white.png" alt="">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-headset"></i>
+                        <div class="text_icon">
+                            <h5> Hetiline Free 24/24:</h5>
+                            <h6> (+100) 123 456 7890 </h6>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor!</p>
+                </div>    
+
+                <div class="col_2">
+                    <h3> FAQs & Help </h3>
+                    <ul>
+                        <li><a href="#"> F.A.O.s </a></li>
+                        <li><a href="#"> Ordering Tracking </a></li>
+                        <li><a href="#"> Contacts </a></li>
+                        <li><a href="#"> Events </a></li>
+                        <li><a href="#"> Help Center </a></li>
+                    </ul>
+                </div>
+
+                <div class="col_2">
+                    <h3> Shipping & Delivery </h3>
+                    <ul>
+                        <li><a href="#"> Delivery Information </a></li>
+                        <li><a href="#"> Discount </a></li>
+                        <li><a href="#"> Payment & Shipping </a></li>
+                        <li><a href="#"> Estimated Delivery </a></li>
+                        <li><a href="#"> Sgipping Guide </a></li>
+                    </ul>
+                </div>
+
+                <div class="col_2">
+                    <h3> Information </h3>
+                    <ul>
+                        <li><a href="#"> Popular </a></li>
+                        <li><a href="#"> Our Services </a></li>
+                        <li><a href="#"> Your Account </a></li>
+                        <li><a href="#"> Privacy policy </a></li>
+                        <li><a href="#"> Terms & Cindition </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+          <div class="row continer">
+              <p> Copyright &copy; <span> Topico. </span> All Rights Reserved </p>
+              
+              <div class="visa_icon">
+                  <a href="#"> <img src="img/payment-1.png" alt="" loading="lazy" > </a> 
+                  <a href="#"> <img src="img/payment-2.png" alt="" loading="lazy" > </a> 
+                  <a href="#"> <img src="img/payment-3.png" alt="" loading="lazy" > </a> 
+                  <a href="#"> <img src="img/payment-4.png" alt="" loading="lazy" > </a> 
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

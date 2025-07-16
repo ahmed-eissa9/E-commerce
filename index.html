@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shop </title>
+    <!-- file css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+    <header>
+        <div class="top-nav continer">
+            <a href="index.html" class="logo"> <img src="img/logo-black.png" alt="" loading="lazy"> </a>
+
+            <form class="search">
+                <input type="search" placeholder="search for products">
+                <button type="submit"> search </button>
+            </form>
+
+            <div class="card-header">
+                <div class="icon-card"  onclick="openCart()";>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count-item" > 0 </span>
+                </div>   
+                <div class="total-price">
+                    <p> my cart: </p>
+                    <span class="price-cart"> $0 </span>
+                </div>   
+            </div>
+        </div>
+
+        <nav>
+            <div class="links continer">
+
+                <i onclick="openMenu()" class="fa-solid fa-bars btn_open_menu"></i>
+                
+                <ul id="menu">
+                    <span onclick="closeMenu()"class="bg_overlay"></span>
+                    <i onclick="closeMenu()" class="fa-solid fa-circle-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-black.png" alt="" loading="lazy">
+                    
+                    <li class="active"> <a href="index.html"> home </a> </li>
+                    <li> <a href="all_products.html"> all products </a> </li>
+                    <li> <a href="#"> about us </a> </li>
+                    <li> <a href="#"> content </a> </li>
+                </ul>
+                
+                <div class="login-signup">
+                    <a href="login.html"> login <i class="fa-solid fa-right-to-bracket"></i> </a>
+                    <a href="sign up.html"> sign up <i class="fa-solid fa-user-plus"></i> </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="cart">
+        <div class="top-cart">
+            <h3> my cart <span class="count_item_cart"> (0Item in cart) </span> </h3>
+            <span class="close-cart" onclick="closeCart()";> <i class="fa-regular fa-circle-xmark"></i> </span>
+        </div>
+
+        <div class="item-in-cart">
+            
+        </div>
+
+        <div class="bottom-cart">
+            <div class="total">
+                <p> cart suptotal </p>
+                <p class="price-cart-total"> $0 </p>
+            </div>
+
+            <div class="buttom-cart">
+                <a href="checkout.html" class="btn-cart"> proceed to checkout </a>
+                <button  onclick="closeCart()"; class="btn-cart trans-bg"> shop more </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="slider"> 
+        <div class="continer">
+            <div class="slide-bar">    
+                <h2> <i class="fa-solid fa-bars"></i> SHOP BY DEPARTYMENT </h2>
+                <ul>
+                    <li><a href="#"> All categoris </a></li>
+                    <li><a href="#"> Best seller products </a></li>
+                    <li><a href="#"> New Arrivals </a></li>
+                    <li><a href="#"> Top 10 offers </a></li>
+                    <li><a href="#"> phones & Tabels </a></li>
+                    <li><a href="#"> Electronics & Digtal </a></li>
+                    <li><a href="#"> Fashion & clothings </a></li>
+                    <li><a href="#"> Jewelry & Watches </a></li>
+                    <li><a href="#"> TV & Audio </a></li>
+                </ul>
+            </div>
+
+              <!-- Swiper -->
+        <div class="slide-swp mySwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <a href="#"> <img src="img/slider-01.jpg" alt="" loading="lazy"> </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#"> <img src="img/slider-02.jpg" alt="" loading="lazy"> </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#"> <img src="img/slider-03.jpg" alt="" loading="lazy"> </a>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="features">
+        <div class="continer">
+            <div class="features-item">
+                <img src="img/features1.png" alt="" loading="lazy">
+                <div class="text">
+                    <h4> Free Shipping </h4>
+                    <p> Free Shipping on all order  </p>
+                </div>
+            </div>
+            <div class="features-item">
+                <img src="img/features2.png" alt="" loading="lazy">
+                <div class="text">
+                    <h4> Free Shipping </h4>
+                    <p> Free Shipping on all order  </p>
+                </div>
+            </div>
+            <div class="features-item">
+                <img src="img/features3.png" alt="" loading="lazy">
+                <div class="text">
+                    <h4> Free Shipping </h4>
+                    <p> Free Shipping on all order  </p>
+                </div>
+            </div>
+            <div class="features-item">
+                <img src="img/features4.png" alt="" loading="lazy">
+                <div class="text">
+                    <h4> Free Shipping </h4>
+                    <p> Free Shipping on all order  </p>
+                </div>
+            </div>
+            <div class="features-item">
+                <img src="img/features5.png" alt="" loading="lazy">
+                <div class="text">
+                    <h4> Free Shipping </h4>
+                    <p> Free Shipping on all order  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="continer">
+            <div class="banner-img">
+                <a href="#"> <img src="img/banner/banner-1.jpg" alt="" loading="lazy"> </a>
+            </div>
+
+            <div class="banner-img">
+                <a href="#"> <img src="img/banner/banner-2.jpg" alt="" loading="lazy"> </a>
+            </div>
+
+            <div class="banner-img">
+                <a href="#"> <img src="img/banner/banner-3.jpg" alt="" loading="lazy"> </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide slide_sale">
+        <div class="continer">
+          <div class="sale_sec mySwiper">
+
+            <div class="top_slide">
+                <h2> on sale <span>produact</span> </h2>
+            </div>
+
+            <div id="swiper_item_sale" class="products swiper-wrapper">
+
+            </div>
+
+            <div class="swiper-button-next btn_swip"></div>
+            <div class="swiper-button-prev btn_swip"></div>
+
+          </div>
+        </div>
+    </section>
+
+    <section class="banner banner_big">
+        <div class="continer">
+            <div class="banner-img">
+                <a href="#"> <img src="img/banner/banner-4.jpg" alt="" loading="lazy"> </a>
+            </div>
+
+            <div class="banner-img">
+                <a href="#"> <img src="img/banner/banner-5.jpg" alt="" loading="lazy"> </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide Computer_Desktop">
+        <div class="continer">
+            <div class="top_slide">
+                <h2> Computer & Desktop <span>produacts</span> </h2>
+            </div>
+
+            <div class="slide_with_img">
+                <div class="cated_img">
+                    <a href="#"> <img src="img/banner/banner-sm-1.jpg" alt="" loading="lazy"> </a>
+                </div>
+
+                <div class="computer_swp mySwper">                   
+                    <div class="products swiper-wrapper" id="computer_item">
+                        
+                    </div>
+                    
+                    <div class="swiper-button-next btn_swip"></div>
+                    <div class="swiper-button-prev btn_swip"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide Computer_Desktop">
+        <div class="continer">
+            <div class="top_slide">
+                <h2> Phone & Tablets <span>produacts</span> </h2>
+            </div>
+
+            <div class="slide_with_img">
+                <div class="computer_swp mySwper">                   
+                    <div class="products swiper-wrapper" id="phone_item">
+                        
+                    </div>
+                    
+                    <div class="swiper-button-next btn_swip"></div>
+                    <div class="swiper-button-prev btn_swip"></div>     
+                </div>
+
+                <div class="cated_img">
+                    <a href="#"> <img src="img/banner/banner-sm-2.jpg" alt="" loading="lazy"> </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="continer">
+            <div class="banner-img">
+                <a href="#"> <img src="img/banner/banner-6.jpg" alt="" loading="lazy"> </a>
+            </div>
+
+            <div class="banner-img">
+                <a href="#"> <img src="img/banner/banner-7.jpg" alt="" loading="lazy"> </a>
+            </div>
+
+            <div class="banner-img">
+                <a href="#"> <img src="img/banner/banner-8.jpg" alt="" loading="lazy"> </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="news_letter">
+        <div class="continer">
+                <div class="text">
+                    <img src="img/icon_email.png" alt="" loading="lazy">
+
+                    <div class="info_massge">
+                        <h4> Sign Up To Newsletter </h4>
+                        <p> Get eamil updats about our latest shop... and receive </p>
+                        <h6> $30 Coupon For First Shopping </h6>
+                    </div>
+                </div>
+
+                <form class="email_newsletter">
+                    <input type="email" placeholder="Enter Your email here..." required>
+                    <button type="submit"> supscribe </button>
+                </form>
+        </div>
+    </section>
+
+
+    <section class="scroll" >
+        <div class="continer">
+            <p class="to_top"> BACK TO UP </p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="continer">
+            <div class="row">
+                <div class="col">
+                    <img src="img/logo-white.png" alt="">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-headset"></i>
+                        <div class="text_icon">
+                            <h5> Hetiline Free 24/24:</h5>
+                            <h6> (+100) 123 456 7890 </h6>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor!</p>
+                </div>    
+
+                <div class="col_2">
+                    <h3> FAQs & Help </h3>
+                    <ul>
+                        <li><a href="#"> F.A.O.s </a></li>
+                        <li><a href="#"> Ordering Tracking </a></li>
+                        <li><a href="#"> Contacts </a></li>
+                        <li><a href="#"> Events </a></li>
+                        <li><a href="#"> Help Center </a></li>
+                    </ul>
+                </div>
+
+                <div class="col_2">
+                    <h3> Shipping & Delivery </h3>
+                    <ul>
+                        <li><a href="#"> Delivery Information </a></li>
+                        <li><a href="#"> Discount </a></li>
+                        <li><a href="#"> Payment & Shipping </a></li>
+                        <li><a href="#"> Estimated Delivery </a></li>
+                        <li><a href="#"> Sgipping Guide </a></li>
+                    </ul>
+                </div>
+
+                <div class="col_2">
+                    <h3> Information </h3>
+                    <ul>
+                        <li><a href="#"> Popular </a></li>
+                        <li><a href="#"> Our Services </a></li>
+                        <li><a href="#"> Your Account </a></li>
+                        <li><a href="#"> Privacy policy </a></li>
+                        <li><a href="#"> Terms & Cindition </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+          <div class="row continer">
+              <p> Copyright &copy; <span> Topico. </span> All Rights Reserved </p>
+              
+              <div class="visa_icon">
+                  <a href="#"> <img src="img/payment-1.png" alt="" loading="lazy" > </a> 
+                  <a href="#"> <img src="img/payment-2.png" alt="" loading="lazy" > </a> 
+                  <a href="#"> <img src="img/payment-3.png" alt="" loading="lazy" > </a> 
+                  <a href="#"> <img src="img/payment-4.png" alt="" loading="lazy" > </a> 
+              </div>
+          </div>
+      </div>
+    </footer>
+
+
+
+
+    
+
+
+
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/swiper.js"></script>
+    <script src="js/items_home.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

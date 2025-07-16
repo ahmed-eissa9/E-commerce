@@ -1,0 +1,198 @@
+:root {
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #d01418;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
+}
+
+
+.item_order {
+    overflow: scroll;
+    height: 60%;
+    margin-bottom: 20px;
+}
+
+
+.checkout {
+    margin: 50px 0;
+}
+
+.checkout .continer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkout .continer .form_address {
+    width: 45%;
+    height: 600px;
+}
+
+.checkout .continer .form_address .coupon_code,
+.checkout .continer .form_address .address {
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.checkout .continer .form_address h2 {
+    font-size: 20px ;
+    font-weight: bold;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.checkout .continer .form_address form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.checkout .continer .form_address form label {
+    font-size: 15px;
+    color: var(--parg-color);
+    margin-bottom: 4px;
+}
+
+.checkout .continer .form_address form input {
+    padding: 10px 0 10px 10px ;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    border-radius: 5px;
+}
+.checkout .continer .form_address form input::placeholder {
+    font-size: 11px;
+}
+
+.checkout .continer .form_address form input:focus {
+    border-color: var(--main-color);
+}
+
+.checkout .continer .order_summaray {
+    width: 45%;
+    height: 517px;
+    background-color: #fff;border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.checkout .continer .order_summaray .order_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.checkout .continer .order_summaray h2 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+.checkout .continer .order_summaray .order_item img {
+    width: 120px;
+}
+
+.checkout .continer .order_summaray .order_item .content h4 { 
+    font-size: 15px;
+    color: var(--parg-color);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.checkout .continer .order_summaray .order_item .content p { 
+    color: var(--dark-color);
+    text-transform: capitalize;
+}
+
+.checkout .continer .order_summaray .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.checkout .continer .order_summaray .total h5 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.checkout .continer .order_summaray .total h6 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.checkout .continer .order_summaray button {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.checkout .continer .order_summaray button:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+}
+
+/** Rsponsive */
+@media (max-width: 900px) {
+    .checkout .continer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        margin-top: 250px ;
+    }
+    .checkout .continer .form_address {
+        width: 80%;
+    }
+    .checkout .continer .order_summaray {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) { 
+    .checkout .continer .form_address {
+        width: 100%;
+    }
+    .checkout .continer .order_summaray {
+        width: 100%;
+    }
+    .checkout .continer .order_summaray .order_item img {
+        width: 100px;
+    }
+    .checkout .continer .order_summaray .order_item .content h4 {
+        font-size: 12px ;
+    }
+    .checkout .continer .order_summaray .order_item .content p {
+        font-size: 15px;
+    }
+    .checkout .continer .order_summaray .total h5 {
+        font-size: 21px;
+    }
+    .checkout .continer .order_summaray .total h6 {
+        font-size: 18px;
+    }
+    .checkout .continer .order_summaray button {
+        font-size: 15px;
+    }
+    .checkout .continer .form_address h2 {
+        font-size: 16px;
+    }
+}
